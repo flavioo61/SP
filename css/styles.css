@@ -1,9 +1,245 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+ 
+  color: #333;
+  background-color: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: black;
   font-family: "roboto";
+  --primary-color: black;
+  --secondary-color:#dcdcdc;
+  --card-color:#eee9e9;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+main {
+  background-color: var(--secondary-color);
+}
+
+
+header .container{
+  max-width: 1100px;
+  margin: auto;
+}
+.nav-list {
+  font-size: 1.5rem;
+  display: flex; 
+  list-style: none;
+}
+
+.topBar nav ul li {
+  color: #fff;
+  padding: 10px 20px;
+  border-bottom: 5px solid yellow;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+.topBar nav ul li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  top: 100px;
+  display: flex;
+}
+#text{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+.resumo{
+  border: #000 solid 1px;
+  width: 80%;
+ 
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color:var(--card-color);
+  font-size: 1.5rem;
+  border-radius: 10px;
+  line-height: 1.5;
+ 
+}
+.container-cards{
+  display: sticky;
+  background-clip: border-box;
+}
+.banner {
+  top: 1         00px;
+  height: 600px;
+  background-image: url(../img/sptw-2019.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: center;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  width: 90%;
+  padding-left: 10%;
+}
+
+.card {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  background-color: var(--card-color);
+  margin: 20px;
+  
+}
+
+.card-desc {
+  flex-grow: 1;
+  overflow-y: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 1.5rem;
+
+  text-align: center;
+
+  line-height: 1.5;
+
+}
+
+
+#title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+
+.city {
+  background-color: var(--secondary-color);
+
+}
+
+.container-video {
+ 
+  background-color: var(--secondary-color);
+  position: relative;
+  bottom: 20px;
+
+}
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.desc-video {
+  display: flex;
+  flex-direction: ;
+  font-size: 1.5rem;
+ 
+  background-color: var(--card-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: #000 solid 1px;
+  gap: 20px;
+  border-radius: 10px;
+
+}
+div .video{
+  background-color: var(--secondary-color);
+ padding: 20px;
+  position: relative;
+}
+div .video > iframe{
+position: abosolute;
+width: 90%;
+}
+
+.linkedin {
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 2px;
+  padding-left: 20px;
+}
+.github {
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 2px;
+  padding-left: 20px;
+}
+.container-footer {
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  position: absolute;
+  z-index: 20;
+  bottom: 10;
+}
+
+
+
+
+@media screen (min-width:720px) {
+.container-card{}
+
+    
+    iframe{
+  
   
 }
