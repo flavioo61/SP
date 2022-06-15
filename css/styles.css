@@ -68,6 +68,14 @@ header .container {
   top: 100px;
   display: flex;
 }
+
+.logo a{
+  height: auto;
+  width: auto;
+  top: 100px;
+  display: flex;
+}
+
 #text {
   font-size: 2rem;
   font-weight: bold;
